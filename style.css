@@ -14,11 +14,11 @@
   width: 60px;
 }
 
-.trybewarts-login{
+.trybewarts-login {
   display: flex;
   justify-content: flex-end;
 }
 
-#trybewarts-header-title{
+#trybewarts-header-title {
   display: flex;
 }
