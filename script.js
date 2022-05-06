@@ -1,12 +1,11 @@
-/* login();
-function login(){ */
+/* 
     const botaoLogin = document.querySelector("#btn-login");    
     const email = document.getElementById("email");
     const senha = document.getElementById("password");
 
     function validar(){
-        let campoEmail = /* "tryber@teste.com" */email;
-        let campoSenha = /* "123456" */senha;
+        let campoEmail = "tryber@teste.com"email;
+        let campoSenha = "123456"senha;
         console.log("teste");
         if (campoEmail === "tryber@teste.com" && campoSenha === "123456") {
             window.alert("Olá, Tryber!");
@@ -15,5 +14,4 @@ function login(){ */
         }
     }
 
-    botaoLogin.addEventListener("click", validar())
-/* } */
+    botaoLogin.addEventListener("click", validar()) */
