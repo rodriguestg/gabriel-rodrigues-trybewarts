@@ -1,4 +1,4 @@
-/*  const botaoLogin = document.querySelector("#btn-login");    
+/*  const botaoLogin = document.querySelector("#btn-login");
     const email = document.getElementById("email");
     const senha = document.getElementById("password");
 
