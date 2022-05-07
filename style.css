@@ -29,6 +29,11 @@
   display: flex;
 }
 
+#btn-login {
+  height: 40px;
+  justify-content: baseline;
+}
+
 main {
   display: flex;
 }
