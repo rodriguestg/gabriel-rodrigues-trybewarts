@@ -17,6 +17,7 @@ const termosDeUso = document.getElementById('agreement');
 const divEnviar = document.getElementById('botao-enviar');
 const botaoEnviar = document.getElementById('submit-btn');
 
+botaoEnviar.disabled = true;
 function enviar() {
   if (termosDeUso.checked === true) {
     botaoEnviar.disabled = false;
