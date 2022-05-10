@@ -72,3 +72,8 @@ main {
 textarea {
   border: 2px solid rgb(50, 167, 145);
 }
+
+#submit-btn {
+  display: flex;
+  justify-content: center;
+}
