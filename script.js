@@ -24,6 +24,4 @@ function enviar() {
     botaoEnviar.disabled = true;
   }
 }
-// botaoEnviar.addEventListener('change', desabilitarBotão);
 divEnviar.addEventListener('mouseover', enviar);
-// botaoEnviar.addEventListener('click', termosDeUso);
