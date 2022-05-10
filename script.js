@@ -14,15 +14,37 @@ function validar() {
 botaoLogin.addEventListener('click', validar);
 
 const termosDeUso = document.getElementById('agreement');
-const divEnviar = document.getElementById('botao-enviar');
 const botaoEnviar = document.getElementById('submit-btn');
 
 botaoEnviar.disabled = true;
 function enviar() {
   if (termosDeUso.checked === true) {
-    botaoEnviar.disabled = false;
-  } else {
     botaoEnviar.disabled = true;
+  } else {
+    botaoEnviar.disabled = false;
   }
 }
-divEnviar.addEventListener('mouseover', enviar);
+termosDeUso.addEventListener('mouseup', enviar);
+
+const areaDeTexto = document.getElementById('textarea');
+const resultadoCaracteres = document.getElementById('counter');
+const maxCaracteres = areaDeTexto.maxLength;
+function contador() {
+  const texto = areaDeTexto.value;
+  const totalCaracteres = texto.length;
+  const caracteresRestantes = maxCaracteres - totalCaracteres;
+  const total = 'Caracteres Restantes: ';
+  resultadoCaracteres.innerText = total + caracteresRestantes;
+}
+areaDeTexto.addEventListener('keyup', contador);
+
+// const nome = document.getElementById('input-name');
+// const sobrenome = document.getElementById('input-lastname');
+// function adicionandoForms() {
+//   const nomeForms = nome.value;
+//   const sobrenomeForms = sobrenome.value;
+//   const caracteresRestantes = nome;
+//   const total = 'Caracteres Restantes: ';
+//   resultadoCaracteres.innerText = total + caracteresRestantes;
+// }
+// botaoEnviar.addEventListener('click', adicionandoForms);
