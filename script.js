@@ -12,3 +12,18 @@ function validar() {
   }
 }
 botaoLogin.addEventListener('click', validar);
+
+const termosDeUso = document.getElementById('agreement');
+const divEnviar = document.getElementById('botao-enviar');
+const botaoEnviar = document.getElementById('submit-btn');
+
+function enviar() {
+  if (termosDeUso.checked === true) {
+    botaoEnviar.disabled = false;
+  } else {
+    botaoEnviar.disabled = true;
+  }
+}
+// botaoEnviar.addEventListener('change', desabilitarBotão);
+divEnviar.addEventListener('mouseover', enviar);
+// botaoEnviar.addEventListener('click', termosDeUso);
