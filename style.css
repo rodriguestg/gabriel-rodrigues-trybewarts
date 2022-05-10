@@ -36,6 +36,9 @@
 
 main {
   display: flex;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 10px;
 }
 
 #evaluation-form {
@@ -76,4 +79,12 @@ textarea {
 #submit-btn {
   display: flex;
   justify-content: center;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(50, 167, 145);
+  margin-top: 5px;
 }
