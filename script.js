@@ -38,13 +38,17 @@ function contador() {
 }
 areaDeTexto.addEventListener('keyup', contador);
 
-// const nome = document.getElementById('input-name');
-// const sobrenome = document.getElementById('input-lastname');
-// function adicionandoForms() {
-//   const nomeForms = nome.value;
-//   const sobrenomeForms = sobrenome.value;
-//   const caracteresRestantes = nome;
-//   const total = 'Caracteres Restantes: ';
-//   resultadoCaracteres.innerText = total + caracteresRestantes;
-// }
-// botaoEnviar.addEventListener('click', adicionandoForms);
+const nome = document.getElementById('input-name');
+const sobrenome = document.getElementById('input-lastname');
+
+const nomeForms = nome.innerText;
+console.log(nomeForms);
+console.log(nome);
+const sobrenomeForms = sobrenome.value;
+
+function adicionandoForms() {
+  console.log(nomeForms);
+ // alert(nomeForms);
+}
+
+botaoEnviar.addEventListener('mouseover', adicionandoForms);
